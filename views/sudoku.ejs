@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <script type="module" src="../sudoku_draw.js" ></script>
+    <head>
+        <!-- <script type="module" src="../sudoku_generate.js" ></script> -->
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sudoku</title>
+        <style type="text/css">
+            canvas { border: 5px solid black; z-index: 1; }
+            div#gameport {margin: auto; display: block; position: relative; top: 0; bottom: 0; left: 0; right: 0; width: 922px; height: 922px}
+            input#cell {z-index:2; position:absolute; text-align: center; font-size: 70px; cursor: pointer; width: 100px; height: 100px; border: 0px; transition-duration: 0.4s;}
+            input#cell.hover {background-color: #c4c4c4;}
+            input#cell.select {background-color: #646464;}
+        </style>
+    </head>
+    <body onload="drawSudoku();">
+        <div id="gameport">
+            <canvas id="sudoku" width= 912px height= 912px></canvas>
+        </div>
+    </body>
+</html>
+
+<!--  -->
